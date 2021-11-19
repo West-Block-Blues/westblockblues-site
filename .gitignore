@@ -1,0 +1,5 @@
+venv/
+site/*
+!site/assets/
+!site/css/
+!site/media
