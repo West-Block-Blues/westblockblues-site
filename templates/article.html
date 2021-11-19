@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+  {% include 'common_head.html' %}  
+</head>
+<body>
+  {% include 'nav.html' %}
+  <main>
+    <div class="main-grid">
+      
+      <div class="main-article-grid">
+        <div class="article-header">
+          <h1 class="article-h1">
+            {{title}}
+          </h1>
+          <span class="fg-a1 w500 x0 mr-s4">{{category}}</span>
+          <span class="x0 fg-m2 w500">{{date}}</span>
+        </div>
+        <div class="article-content">
+          <img src="{{cover}}" class="cover"/>
+          {{body}}
+        </div>
+        <div class="article-more-news">
+          <h2 class="span-full">More News</h2>
+          {% for article in more_news %}
+          <a href="/news/{{article['link']}}" class="post-feature">
+            <img class="post-feature-img" src="{{article['cover']}}">
+            <div class="c2-auto">
+              <span class="fg-a1 w500 x0">{{article["category"]}}</span>
+              <span class="x0 fg-m2 w500">{{article["date"]}}</span>
+            </div>
+            <h3 class="post-feature-title">
+              {{article["title"]}}
+            </h3>
+          </a>
+          {% endfor %}  
+      </div>
+    </div>
+    
+    <!--
+    <div class="main-grid bg-l2 mt-s5 pb-s6 mb-s5">
+      <div class="span-full c2-space-bw mt-s6">
+        <h2>Latest News</h2>
+        <a href="/" class="see-all-link">
+          <span>View All</span>
+          <img src="/assets/c-right-b.svg"/>
+        </a>
+      </div>
+      <a href="/" class="post-feature">
+        <img class="post-feature-img" src="/assets/q1.png">
+        <div class="c2-auto">
+          <span class="fg-a1 w500 x0">News</span>
+          <span class="x0 fg-m2 w500">September 26</span>
+        </div>
+        <h3 class="post-feature-title">
+          Best solo goals in Premier League history
+        </h3>
+      </a>
+      <a href="/" class="post-feature">
+        <img class="post-feature-img" src="/assets/q2.png">
+        <div class="c2-auto">
+          <span class="fg-a1 w500 x0">News</span>
+          <span class="x0 fg-m2 w500">September 26</span>
+        </div>
+        <h3 class="post-feature-title">
+          Best solo goals in Premier League history
+        </h3>
+      </a>
+      <a href="/" class="post-feature">
+        <img class="post-feature-img" src="/assets/q3.png">
+        <div class="c2-auto">
+          <span class="fg-a1 w500 x0">News</span>
+          <span class="x0 fg-m2 w500">September 26</span>
+        </div>
+        <h3 class="post-feature-title">
+          Best solo goals in Premier League history
+        </h3>
+      </a>
+      <a href="/" class="post-feature">
+        <img class="post-feature-img" src="/assets/q4.png">
+        <div class="c2-auto">
+          <span class="fg-a1 w500 x0">News</span>
+          <span class="x0 fg-m2 w500">September 26</span>
+        </div>
+        <h3 class="post-feature-title">
+          Best solo goals in Premier League history
+        </h3>
+      </a>
+    </div>   
+    -->
+    </div>
+    {% include 'footer.html' %}    
+  </main>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+  {% include 'common_head.html' %}
+</head>
+<body>
+  {% include 'nav.html' %}
+  <main>
+    <div class="main-grid">
+      <section class="page-hero mb-s6">
+        <img class="page-header-backdrop" src="/assets/header_bg.png"/>
+        <h1 class="page-h1">
+          News <br>& Articles
+        </h1>
+      </section>
+      <a href="/news/{{highlight_article['link']}}" class="post-highlight">
+        <div class="post-highlight-img-container">
+          <img class="post-highlight-img" src="{{highlight_article['cover']}}">
+        </div>
+        <div class="post-highlight-content">
+          <div class="c2-auto mb-s4">
+            <span class="fg-a1 w500 x0">{{highlight_article["category"]}}</span>
+            <span class="fg-m2 w500 x0">{{highlight_article["date"]}}</span>
+          </div>
+          <h3 class="post-highlight-title">{{highlight_article["title"]}}</h3>
+        </div>
+      </a>
+      {% for article in featured_articles %}
+      <a href="/news/{{article['link']}}" class="post-feature">
+        <img class="post-feature-img" src="{{article['cover']}}">
+        <div class="c2-auto">
+          <span class="fg-a1 w500 x0">{{article["category"]}}</span>
+          <span class="x0 fg-m2 w500">{{article["date"]}}</span>
+        </div>
+        <h3 class="post-feature-title">
+          {{article["title"]}}
+        </h3>
+      </a>
+      {% endfor %}
+    </div>
+    
+    <!--   
+    <div class="main-grid bg-l2 mt-s5 pb-s5">
+      <div class="span-full c2-space-bw mt-s5">
+        <h2>Featured Articles</h2>
+      </div>
+      <a href="/" class="post-feature-article">
+        <div class="c2-auto">
+          <span class="fg-a1 w500 x0">News</span>
+          <span class="x0 fg-m2 w500">September 26</span>
+        </div>
+        <h3 class="post-feature-title">
+          Draw Together Challenge helped us talk about diversity’
+        </h3>
+        <p>
+          Of course we could/should have scored four or five. Should have 
+          killed the game both before their goal and after our winner. 
+          Didn’t have our shooting shoes on. Missed a couple of key passes. 
+          Didn’t make that last play for a deserved goal.
+        </p>
+      </a>
+      <a href="/" class="post-feature-article">
+        <div class="c2-auto">
+          <span class="fg-a1 w500 x0">News</span>
+          <span class="x0 fg-m2 w500">September 26</span>
+        </div>
+        <h3 class="post-feature-title">
+          Draw Together Challenge helped us talk about diversity’
+        </h3>
+        <p>
+          Of course we could/should have scored four or five. Should have 
+          killed the game both before their goal and after our winner. 
+          Didn’t have our shooting shoes on. Missed a couple of key passes. 
+          Didn’t make that last play for a deserved goal.
+          Didn’t make that last play for a deserved goal.
+        </p>
+      </a>
+      
+    </div>
+       
+      
+    <div class="main-grid pb-s5">  
+      <div class="span-full c2-space-bw mt-s5">
+      </div>
+      <a href="/" class="post-feature">
+        <img class="post-feature-img" src="/assets/q1.png">
+        <div class="c2-auto">
+          <span class="fg-a1 w500 x0">News</span>
+          <span class="x0 fg-m2 w500">September 26</span>
+        </div>
+        <h3 class="post-feature-title">
+          Best solo goals in Premier League history
+        </h3>
+      </a>
+      <a href="/" class="post-feature">
+        <img class="post-feature-img" src="/assets/q2.png">
+        <div class="c2-auto">
+          <span class="fg-a1 w500 x0">News</span>
+          <span class="x0 fg-m2 w500">September 26</span>
+        </div>
+        <h3 class="post-feature-title">
+          Best solo goals in Premier League history
+        </h3>
+      </a>
+      <a href="/" class="post-feature">
+        <img class="post-feature-img" src="/assets/q3.png">
+        <div class="c2-auto">
+          <span class="fg-a1 w500 x0">News</span>
+          <span class="x0 fg-m2 w500">September 26</span>
+        </div>
+        <h3 class="post-feature-title">
+          Best solo goals in Premier League history
+        </h3>
+      </a>
+      <a href="/" class="post-feature">
+        <img class="post-feature-img" src="/assets/q4.png">
+        <div class="c2-auto">
+          <span class="fg-a1 w500 x0">News</span>
+          <span class="x0 fg-m2 w500">September 26</span>
+        </div>
+        <h3 class="post-feature-title">
+          Best solo goals in Premier League history
+        </h3>
+      </a>
+    </div>
+    
+    
+    <div class="main-grid pb-s5 mt-s5">
+      <a href="/" class="post-feature-full-span mb-s5">
+        <img class="post-feature-full-span-img" src="/assets/post1.jpg">
+        <div href="/" class="post-feature-full-span-text">
+          <div class="c2-auto">
+            <span class="fg-a1 w500 x0">News</span>
+            <span class="x0 fg-m2 w500">September 26</span>
+          </div>
+          <h3 class="post-feature-title">
+            Draw Together Challenge helped us talk about diversity’
+          </h3>
+          <p>
+            Of course we could/should have scored four or five. Should have 
+            killed the game both before their goal and after our winner. 
+            Didn’t have our shooting shoes on. Missed a couple of key passes. 
+            Didn’t make that last play for a deserved goal.
+            Didn’t make that last play for a deserved goal.
+          </p>
+        </div>
+      </a>
+      <a href="/" class="post-feature-full-span mb-s5">
+        <img class="post-feature-full-span-img" src="/assets/post1.jpg">
+        <div href="/" class="post-feature-full-span-text">
+          <div class="c2-auto">
+            <span class="fg-a1 w500 x0">News</span>
+            <span class="x0 fg-m2 w500">September 26</span>
+          </div>
+          <h3 class="post-feature-title">
+            Draw Together Challenge helped us talk about diversity’
+          </h3>
+          <p>
+            Of course we could/should have scored four or five. Should have 
+            killed the game both before their goal and after our winner. 
+            Didn’t have our shooting shoes on. Missed a couple of key passes. 
+            Didn’t make that last play for a deserved goal.
+            Didn’t make that last play for a deserved goal.
+          </p>
+        </div>
+      </a>
+      
+      
+    </div>
+    -->
+    
+    
+    <div class="main-grid pb-s5">
+      <a href="/" class="shop-link mt-s6">
+        <img src="/assets/shop.png">
+      </a>
+    </div>
+        
+    
+    {% include 'footer.html' %}
+  </main>
+</body>
+</html>

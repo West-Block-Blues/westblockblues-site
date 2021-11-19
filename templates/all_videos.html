@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+  {% include 'common_head.html' %}
+</head>
+<body>
+  {% include 'nav.html' %}
+  <main>
+    <div class="main-grid">
+      <section class="page-hero mb-s6">
+        <img class="page-header-backdrop" src="/assets/header_bg.png"/>
+        <h1 class="page-h1">
+          All Videos
+        </h1>
+      </section>
+      
+    </div>   
+      
+    <div class="main-grid pb-s5">  
+      <div class="span-full c2-space-bw mt-s5">
+      </div>
+      {% for video in videos %}
+      <a href="/" class="post-feature">
+        <iframe class="post-feature-video-iframe" allow="fullscreen;"
+          src="https://www.youtube.com/embed/{{video['id']}}">
+        </iframe>
+        <h3 class="post-feature-title">
+          {{video["title"]}}
+        </h3>
+      </a>
+      {% endfor %}
+    </div>
+    
+    <!-- 
+    <div class="main-grid mt-s5">  
+      <a href="/" class="post-feature-video">
+        <img class="post-feature-video-img" src="/assets/post1.jpg">
+        <div class="c2-auto">
+          <span class="fg-a1 w500 x0">Matchday</span>
+          <span class="x0 fg-m2 w500">September 26</span>
+        </div>
+        <h3 class="post-feature-title">
+          Best solo goals in Premier League history
+        </h3>
+      </a>
+      <a href="/" class="post-feature-video">
+        <img class="post-feature-video-img" src="/assets/post1.jpg">
+        <div class="c2-auto">
+          <span class="fg-a1 w500 x0">Matchday</span>
+          <span class="x0 fg-m2 w500">September 26</span>
+        </div>
+        <h3 class="post-feature-title">
+          Best solo goals in Premier League history
+        </h3>
+      </a>
+      <a href="/" class="post-feature-video">
+        <img class="post-feature-video-img" src="/assets/post1.jpg">
+        <div class="c2-auto">
+          <span class="fg-a1 w500 x0">Matchday</span>
+          <span class="x0 fg-m2 w500">September 26</span>
+        </div>
+        <h3 class="post-feature-title">
+          Best solo goals in Premier League history
+        </h3>
+      </a>
+      <a href="/" class="post-feature-video">
+        <img class="post-feature-video-img" src="/assets/post1.jpg">
+        <div class="c2-auto">
+          <span class="fg-a1 w500 x0">Matchday</span>
+          <span class="x0 fg-m2 w500">September 26</span>
+        </div>
+        <h3 class="post-feature-title">
+          Best solo goals in Premier League history
+        </h3>
+      </a>
+      <a href="/" class="post-feature-video">
+        <img class="post-feature-video-img" src="/assets/post1.jpg">
+        <div class="c2-auto">
+          <span class="fg-a1 w500 x0">Matchday</span>
+          <span class="x0 fg-m2 w500">September 26</span>
+        </div>
+        <h3 class="post-feature-title">
+          Best solo goals in Premier League history
+        </h3>
+      </a>
+      <a href="/" class="post-feature-video">
+        <img class="post-feature-video-img" src="/assets/post1.jpg">
+        <div class="c2-auto">
+          <span class="fg-a1 w500 x0">Matchday</span>
+          <span class="x0 fg-m2 w500">September 26</span>
+        </div>
+        <h3 class="post-feature-title">
+          Best solo goals in Premier League history
+        </h3>
+      </a>
+    </div>
+    -->
+    
+    <div class="main-grid">    
+      <a href="/" class="shop-link mt-s6">
+        <img src="/assets/shop.png">
+      </a>
+    </div>  
+        
+    {% include 'footer.html' %}
+  </main>
+</body>
+</html>

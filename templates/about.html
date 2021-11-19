@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  {% include 'common_head.html' %}  
+</head>
+<body>
+  {% include 'nav.html' %}
+  <main>
+    <div class="main-grid">
+      <section class="page-hero mb-s6">
+        <img class="page-header-backdrop" src="/assets/header_bg.png"/>
+        <h1 class="page-h1">
+          About Us
+        </h1>
+      </section>
+    </div>
+    <div class="main-grid">
+      <div class="article-content span-full about-us-content">
+        {{body}}
+      </div>
+    </div>
+    {% include 'footer.html' %}    
+  </main>
+</body>
+</html>

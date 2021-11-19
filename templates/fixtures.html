@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  {% include 'common_head.html' %}
+</head>
+<body>
+  {% include 'nav.html' %}
+  <main>
+    <div class="main-grid">
+      <section class="page-hero mb-s6">
+        <img class="page-header-backdrop" src="/assets/header_bg.png"/>
+        <div class="fnr-hero-content">
+          <h1 class="fnr-h1">
+            Fixtures & Results
+          </h1>
+          <div class="fnr-hero-fixture">
+            <div>
+              <p class="fg-a1"><b>Upcoming match</b></p>
+              <p class="fg-t2 w600">Indian Super League</p>
+            </div>
+            <div class="hero-fixture-teams">
+              <img src="/media/team-{{fixtures[upcoming]['team1']}}.png">
+              <img src="/media/team-{{fixtures[upcoming]['team2']}}.png">
+              <p>
+                <span>{{teams[fixtures[upcoming]['team1']]}}</span><br>
+                <span>{{teams[fixtures[upcoming]['team2']]}}</span>
+              </p>
+            </div>
+            <p class="w600">
+              {{fixtures[upcoming]['date']}}, {{fixtures[upcoming]['time']}}
+            </p>
+          </div>
+          <div>
+            <a href="/fixtures.html" class="fnr-hero-tab active">Fixtures</a>
+            <a href="/results.html" class="fnr-hero-tab">Results</a>
+          </div>  
+        </div>  
+      </section>
+    </div>
+       
+    <div class="main-grid">
+      {% for fixture in fixtures %}
+      <div class="fnr-fixture">
+        <div class="fnr-fixture-teams">
+          <img src="/media/team-{{fixture['team1']}}.png">
+          <img src="/media/team-{{fixture['team2']}}.png">
+          <div>
+            <p class="c2-space-bw">
+              <span>{{teams[fixture["team1"]]}}</span>
+              <span></span>
+            </p>
+            <p class="c2-space-bw">
+              <span>{{teams[fixture["team2"]]}}</span>
+              <span></span>
+            </p>
+          </div>
+        </div>
+        <div class="fnr-fixture-venue">
+          <img src="/assets/stadium_b.png">
+          <div>
+            <p class="fnr-fixture-venue-name">{{venues[fixture["venue"]][0]}}</p>
+            <p class="fnr-fixture-venue-location">{{venues[fixture["venue"]][1]}}</p>
+          </div>
+        </div>
+        <p class="fnr-fixture-time">
+          <span>{{fixture["time"]}}</span><br>
+          <span>{{fixture["date"]}}</span>    
+        </p>
+      </div>
+      {% endfor %}
+      
+    </div>
+    
+    <div class="main-grid">    
+      <a href="/" class="shop-link mt-s6">
+        <img src="/assets/shop.png">
+      </a>
+    </div>  
+    
+    {% include 'footer.html' %}
+  </main>
+</body>
+</html>
