@@ -20,9 +20,9 @@
         <h2 class="teams-page-subtitle">Goalkeepers</h2>
       </div>
       
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
+      {% for n in goalkeepers %}
+      <img src="/media/p{{n}}.png" class="team-player-img">
+      {% endfor %}
     </div>
     
     <div class="main-grid bg-l2 teams-page-section">
@@ -30,15 +30,10 @@
         <h2 class="teams-page-subtitle">Defenders</h2>
       </div>
       
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
-      
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
+      {% for n in defenders %}
+      <img src="/media/p{{n}}.png" class="team-player-img">
+      {% endfor %}
+     
     </div>
     
     <div class="main-grid teams-page-section">
@@ -46,17 +41,9 @@
         <h2 class="teams-page-subtitle">Midfielders</h2>
       </div>
       
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
-      
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
-      
-      <img src="/assets/players.png" class="team-player-img">
+      {% for n in midfielders %}
+      <img src="/media/p{{n}}.png" class="team-player-img">
+      {% endfor %}
     </div>
        
       
@@ -65,19 +52,9 @@
         <h2 class="teams-page-subtitle">Forwards</h2>
       </div>
       
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
-      
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
-      
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
-      <img src="/assets/players.png" class="team-player-img">
+      {% for n in forwards %}
+      <img src="/media/p{{n}}.png" class="team-player-img">
+      {% endfor %}
     </div>
     
         

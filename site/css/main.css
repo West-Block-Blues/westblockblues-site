@@ -502,6 +502,7 @@ p {margin: 0;}
   text-decoration: none;
   color: var(--d4);
   font-weight: 500;
+  font-size: 14px;
 }
 
 .main-nav-logo {
@@ -519,6 +520,10 @@ p {margin: 0;}
 
 .mb-s5 {
   margin-bottom: var(--s5);
+}
+
+.mb-s5_5 {
+  margin-bottom: var(--s5_5);
 }
 
 .mb-s6 {
