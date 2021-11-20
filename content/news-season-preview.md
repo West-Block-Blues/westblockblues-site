@@ -52,8 +52,6 @@ Like Ramires, Basafa will have to fill the void left by the departures of Erik P
 ### Prince Ibara
 The big man from Congo comes in as the next in a line of potential successors to Miku, that the club has been striving to find. Manu Onwu, Deshorn Brown and Kristian Opseth all couldn’t quite fulfill the role that was needed off them. In Prince, there is another opportunity for redemption. If he comes up with the goods on a consistent basis, there’s a good chance that the Blues will be playing playoffs football once again this season.
 
-![Merchandise](/assets/shop.png)
-
 ### Jayesh Rane
 Last season, Cleiton Silva was tasked both with being the creative presence in the Blues midfield, while also having to be a goal-scorer, in the absence of a prolific marksman up-front. This season, Jayesh Rane has arrived to take some of that burden of the Brazilian.
 
