@@ -453,6 +453,7 @@ p {margin: 0;}
   grid-gap: var(--s4) var(--s5);
 }
 
+
 .main-article-grid {
   grid-column: 1 / -1;
   padding: 0;
@@ -763,6 +764,10 @@ p {margin: 0;}
 }
 .shop-link img{
   width: 100%;
+}
+
+.span-2 {
+  grid-column: span 2;
 }
 
 .span-full {
