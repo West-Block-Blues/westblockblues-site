@@ -2,6 +2,28 @@ title: Results | West Block Blues
 description: BFC Results for the current season
 template: results.html
 target: results.html
+results:
+  - team1: bfc
+    team2: neufc
+    venue: 0
+    time: "07:30 PM"
+    date: Saturday 20 Nov
+    team1_score: 4
+    team2_score: 2
+  - team1: ofc
+    team2: bfc
+    venue: 1
+    time: "07:30 PM"
+    date: Wednesday 24 Nov
+    team1_score: 3
+    team2_score: 1
+  - team1: bfc
+    team2: kbfc
+    venue: 0
+    time: "07:30 PM"
+    date: Sunday 28 Nov
+    team1_score: 1
+    team2_score: 1
 fixtures:
   - team1: bfc
     team2: neufc
@@ -53,7 +75,7 @@ fixtures:
     venue: 0
     time: "07:30 PM"
     date: Tuesday 4 Jan
-upcoming: 0      
+upcoming: 3         
 ---
 
 

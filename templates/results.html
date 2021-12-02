@@ -39,7 +39,35 @@
     </div>
        
     <div class="main-grid">
-      
+      {% for result in results %}
+      <div class="fnr-fixture">
+        <div class="fnr-fixture-teams">
+          <img src="/media/team-{{result['team1']}}.png">
+          <img src="/media/team-{{result['team2']}}.png">
+          <div>
+            <p class="c2-space-bw">
+              <span>{{teams[result["team1"]]}}</span>
+              <span>{{result["team1_score"]}}</span>
+            </p>
+            <p class="c2-space-bw">
+              <span>{{teams[result["team2"]]}}</span>
+              <span>{{result["team2_score"]}}</span>
+            </p>
+          </div>
+        </div>
+        <div class="fnr-fixture-venue">
+          <img src="/assets/stadium_b.png">
+          <div>
+            <p class="fnr-fixture-venue-name">{{venues[result["venue"]][0]}}</p>
+            <p class="fnr-fixture-venue-location">{{venues[result["venue"]][1]}}</p>
+          </div>
+        </div>
+        <p class="fnr-fixture-time">
+          <span>{{result["time"]}}</span><br>
+          <span>{{result["date"]}}</span>    
+        </p>
+      </div>
+      {% endfor %}
     </div>
     <!--
     <div class="main-grid">    
