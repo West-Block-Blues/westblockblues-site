@@ -24,6 +24,27 @@ results:
     date: Sunday 28 Nov
     team1_score: 1
     team2_score: 1
+  - team1: bfc
+    team2: mcfc
+    venue: 0
+    time: "09:30 PM"
+    date: Saturday 4 Dec
+    team1_score: 1
+    team2_score: 3
+  - team1: hfc
+    team2: bfc
+    venue: 0
+    time: "07:30 PM"
+    date: Wednesday 8 Dec
+    team1_score: 1
+    team2_score: 0
+  - team1: fcg
+    team2: bfc
+    venue: 0
+    time: "09:30 PM"
+    date: Saturday 11 Dec
+    team1_score: 2
+    team2_score: 1
 fixtures:
   - team1: bfc
     team2: neufc

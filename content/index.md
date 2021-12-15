@@ -4,10 +4,10 @@ template: index.html
 target: index.html
 upcoming_fixture:
   team1: bfc
-  team2: mcfc
+  team2: atkmb
   venue: 0
-  time: "09:30 PM"
-  date: Saturday 4 Dec
+  time: "07:30 PM"
+  date: Thursday 16 Dec
 highlight_article:
   title: Come Together, Go Marching in! Bengaluru FC Season Preview - ISL 2021-22
   category: News
