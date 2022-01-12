@@ -45,6 +45,34 @@ results:
     date: Saturday 11 Dec
     team1_score: 2
     team2_score: 1
+  - team1: bfc
+    team2: atkmb
+    venue: 0
+    time: "07:30 PM"
+    date: Thursday 16 Dec
+    team1_score: 3
+    team2_score: 3
+  - team1: jfc
+    team2: bfc
+    venue: 0
+    time: "07:30 PM"
+    date: Monday 20 Dec
+    team1_score: 0
+    team2_score: 0
+  - team1: cfc
+    team2: bfc
+    venue: 1
+    time: "07:30 PM"
+    date: Thursday 30 Dec
+    team1_score: 2
+    team2_score: 4
+  - team1: bfc
+    team2: ebfc
+    venue: 0
+    time: "07:30 PM"
+    date: Tuesday 4 Jan
+    team1_score: 1
+    team2_score: 1  
 fixtures:
   - team1: bfc
     team2: neufc
