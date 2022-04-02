@@ -72,7 +72,71 @@ results:
     time: "07:30 PM"
     date: Tuesday 4 Jan
     team1_score: 1
-    team2_score: 1  
+    team2_score: 1
+  - team1: mcfc
+    team2: bfc
+    venue: 2
+    time: "07:30 PM"
+    date: Monday 10 Jan
+    team1_score: 0
+    team2_score: 3
+  - team1: bfc
+    team2: fcg
+    venue: 0
+    time: "07:30 PM"
+    date: Sunday 23 Jan
+    team1_score: 1
+    team2_score: 1
+  - team1: bfc
+    team2: cfc
+    venue: 0
+    time: "07:30 PM"
+    date: Wednesday 26 Jan
+    team1_score: 3
+    team2_score: 0
+  - team1: kbfc
+    team2: bfc
+    venue: 1
+    time: "07:30 PM"
+    date: Sunday 30 Jan
+    team1_score: 0
+    team2_score: 1
+  - team1: bfc
+    team2: jfc
+    venue: 0
+    time: "07:30 PM"
+    date: Saturday 05 Feb
+    team1_score: 3
+    team2_score: 1
+  - team1: bfc
+    team2: hfc
+    venue: 0
+    time: "07:30 PM"
+    date: Friday 11 Feb
+    team1_score: 1
+    team2_score: 2
+  - team1: neufc
+    team2: bfc
+    venue: 2
+    time: "07:30 PM"
+    date: Friday 18 Feb
+    team1_score: 1
+    team2_score: 2
+  - team1: bfc
+    team2: ofc
+    venue: 0
+    time: "07:30 PM"
+    date: Monday 21 Feb
+    team1_score: 2
+    team2_score: 1
+  - team1: ebfc
+    team2: bfc
+    venue: 1
+    time: "07:30 PM"
+    date: Saturday 05 Mar
+    team1_score: 0
+    team2_score: 1
+       
 fixtures:
   - team1: bfc
     team2: neufc
@@ -124,6 +188,8 @@ fixtures:
     venue: 0
     time: "07:30 PM"
     date: Tuesday 4 Jan
+  
+    
 upcoming: 6         
 ---
 

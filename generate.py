@@ -26,6 +26,7 @@ teams = {
 venues = [
   ["GMC Athletic Stadium", "Bambolim, Goa"], #0
   ["Tilak Maidan Stadium", "Vasco da Gama, Goa"], #1
+  ["Fatorda Stadium", "Goa"], #2
 ]
 
 # load templates
